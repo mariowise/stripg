@@ -1,0 +1,26 @@
+parent.0 = /home/arthen/Descargas/ecj/ec/gp/koza/koza.params
+
+# the next four items are already defined in koza.params, but we
+# put them here to be clear.
+
+# We have one function set, of class GPFunctionSet
+gp.fs.size = 1
+gp.fs.0 = ec.gp.GPFunctionSet
+# We'll call the function set "f0".
+gp.fs.0.name = f0
+
+# We have five functions in the function set.  They are:
+gp.fs.0.size = 5
+gp.fs.0.func.0 = Terminals.X
+gp.fs.0.func.0.nc = nc0
+gp.fs.0.func.1 = Terminals.Y
+gp.fs.0.func.1.nc = nc0
+gp.fs.0.func.2 = FunctionSet.Add
+gp.fs.0.func.2.nc = nc2
+gp.fs.0.func.3 = FunctionSet.Sub
+gp.fs.0.func.3.nc = nc2
+gp.fs.0.func.4 = FunctionSet.Mul
+gp.fs.0.func.4.nc = nc2
+
+eval.problem = Problem.MultiValuedRegression
+eval.problem.data = Data.DoubleData
