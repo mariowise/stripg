@@ -19,7 +19,7 @@ public class Last extends GPNode{
     public void eval(EvolutionState es, int i, GPData gpdata, ADFStack adfs, GPIndividual gpi, Problem prblm) {
         
     	ListData ld = ((ListData)gpdata);
-    	ld.posLast = ((StripPackingProblem)prblm).posLastcurrent;
+    	ld.posObjetivo = ((StripPackingProblem)prblm).listaOrginalcurrent.size()-1;
         
     }
 }

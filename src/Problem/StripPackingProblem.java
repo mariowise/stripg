@@ -19,11 +19,8 @@ public class StripPackingProblem extends GPProblem implements SimpleProblemForm 
 	public static final String P_DATA = "data";
 	public ArrayList<Pieza> listaFinalcurrent = new ArrayList<Pieza>();
 	public ArrayList<Pieza> listaOrginalcurrent = new ArrayList<Pieza>();
-	public int posMayorcurrent;
-	public int posMenorcurrent;
-	public int posFirstcurrent;
-	public int posLastcurrent;
-	public int posRandomcurrent;
+	public int posObjetivocurrent;
+	
 	
 	public void setup(final EvolutionState state, Parameter base)
     {

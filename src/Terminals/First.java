@@ -19,7 +19,7 @@ public class First extends GPNode{
     public void eval(EvolutionState es, int i, GPData gpdata, ADFStack adfs, GPIndividual gpi, Problem prblm) {
         
     	ListData ld = ((ListData)gpdata);
-    	ld.posFirst = ((StripPackingProblem)prblm).posFirstcurrent;
+    	ld.posObjetivo = 0;
         
     }
 }
