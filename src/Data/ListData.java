@@ -10,11 +10,13 @@ public class ListData extends GPData{
 	public ArrayList<Pieza> listaOrginal = new ArrayList<Pieza>();
 	public int posObjetivo;
 	public boolean vacio;
+	public int cantPiezas;
 	
 	public void copyTo(final GPData gpd){ 
         ((ListData)gpd).listaFinal = listaFinal; 
         ((ListData)gpd).listaOrginal=listaOrginal;
         ((ListData)gpd).posObjetivo = posObjetivo;
         ((ListData)gpd).vacio = vacio;
+        ((ListData)gpd).cantPiezas = cantPiezas;
     }
 }

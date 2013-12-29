@@ -1,0 +1,17 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.0 Adjusted=1.0 Hits=1
+Tree 0:
+ (WHILE (WHILE (WHILE MAYOR MAYOR) (PUSH MAYOR))
+     (WHILE (WHILE RANDOM MAYOR) (WHILE LAST RANDOM)))
+
+Best Individual of Run:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.0 Adjusted=1.0 Hits=1
+Tree 0:
+ (WHILE (WHILE (WHILE MAYOR MAYOR) (PUSH MAYOR))
+     (WHILE (WHILE RANDOM MAYOR) (WHILE LAST RANDOM)))
