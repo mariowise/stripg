@@ -22,7 +22,13 @@ public class Menor extends GPNode{
     public void eval(EvolutionState es, int i, GPData gpdata, ADFStack adfs, GPIndividual gpi, Problem prblm) {
         
     	ListData ld = ((ListData)gpdata);
-    	ld.posObjetivo = menor(((StripPackingProblem)prblm).listaOrginalcurrent);
+    	if(!ld.listaOrginal.isEmpty()){
+    		ld.posObjetivo = menor(((StripPackingProblem)prblm).data.listaOrginal);
+    		ld.vacio = false;
+    	}
+    	else{
+    		ld.vacio = true;
+    	}
         
     }
     

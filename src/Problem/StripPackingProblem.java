@@ -22,7 +22,7 @@ public class StripPackingProblem extends GPProblem implements SimpleProblemForm 
 
 	public static final String P_DATA = "data";
 	
-	public ArrayList<Pieza> listaOrginalcurrent = new ArrayList<Pieza>();
+	public ListData data = new ListData();
 	
 	
 	
@@ -35,6 +35,16 @@ public class StripPackingProblem extends GPProblem implements SimpleProblemForm 
     if (!(input instanceof ListData))
         state.output.fatal("GPData class must subclass from " + ListData.class,
             base.push(P_DATA), null);
+    
+    	try {
+			data.listaOrginal = lectura("/home/arthen/workspace/PGspp/src/B1.txt");
+			data.listaFinal = new ArrayList<Pieza>();
+		    data.cantPiezas = data.listaOrginal.size();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    
     }
 
 @Override
@@ -42,24 +52,21 @@ public void evaluate(EvolutionState es, Individual indvdl, int i, int i1) {
     
     if(!indvdl.evaluated){
         
-    	ListData input = (ListData)(this.input);
+    	ListData input = data;
     	int hits = 0;
         int sum = 0;
         int expectedResult;
         int result;
+       
         
-        try {
-			listaOrginalcurrent = lectura("B1.txt");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
         
         expectedResult = 0;
         ((GPIndividual)indvdl).trees[0].child.eval(
                 es,i1,input,stack,((GPIndividual)indvdl),this);
         
-        if(input.listaOrginal.isEmpty()){
+        
+        
+        if(data.listaOrginal.isEmpty()){
         	result = 0;
         }
         else{
@@ -68,6 +75,9 @@ public void evaluate(EvolutionState es, Individual indvdl, int i, int i1) {
         
         if(result == 0) hits++;
         sum+=result;
+        
+        
+        
         
         KozaFitness f = ((KozaFitness)indvdl.fitness);
         f.setStandardizedFitness(es,(float)sum);

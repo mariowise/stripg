@@ -22,8 +22,13 @@ public class Mayor extends GPNode{
     public void eval(EvolutionState es, int i, GPData gpdata, ADFStack adfs, GPIndividual gpi, Problem prblm) {
         
     	ListData ld = ((ListData)gpdata);
-    	ld.posObjetivo = mayor(((StripPackingProblem)prblm).listaOrginalcurrent);
-        
+    	if(!ld.listaOrginal.isEmpty()){
+    		ld.posObjetivo = mayor(((StripPackingProblem)prblm).data.listaOrginal);
+    		ld.vacio = false;
+    	}
+    	else{
+    		ld.vacio = true;
+    	}
     }
     
     public int mayor(ArrayList<Pieza> listaOriginal){

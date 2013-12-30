@@ -20,22 +20,46 @@ public class RandomPush extends GPNode{
         int posicion;
         int random;
         ListData rd = ((ListData)(gpdata));
-        
         children[0].eval(es, i, gpdata, adfs, gpi, prblm);
         posicion = rd.posObjetivo;
         random = 0 + (int)(Math.random() * ((10 - 0) + 1));
+        
+        if(rd.vacio==false){
         if(random >= 5 || rd.listaFinal.size()==0){
         	
-        	rd.listaFinal.add(0, rd.listaOrginal.get(posicion));
+        	if(posicion < rd.listaOrginal.size()){
+        	rd.listaFinal.add(rd.listaOrginal.get(posicion));
+        	rd.listaOrginal.remove(posicion);
+        	}
+        	else{
+        		rd.listaFinal.add(rd.listaOrginal.get(rd.listaOrginal.size()-1));
+        		rd.listaOrginal.remove(rd.listaOrginal.size()-1);
+        	}
         	
         }
         else{
-        	
-        	rd.listaFinal.add(rd.listaFinal.size()-1, rd.listaOrginal.get(posicion));
+        	if(posicion < rd.listaOrginal.size()){
+            	rd.listaFinal.add(rd.listaFinal.size()-1, rd.listaOrginal.get(posicion));
+            	rd.listaOrginal.remove(posicion);
+            	}
+        	else{
+        		rd.listaFinal.add(rd.listaOrginal.get(0));
+        		rd.listaOrginal.remove(0);
+        	}
         	
         }
         
-        rd.listaOrginal.remove(posicion);
+        
+        
+        if(rd.listaOrginal.isEmpty()){
+        	rd.vacio = true;
+        }
+       else{
+        	rd.vacio = false;
+       }
     }
-	
+        else{
+        	rd.vacio = true;
+        }
+	}
 }

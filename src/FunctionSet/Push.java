@@ -18,11 +18,28 @@ public class Push extends GPNode{
         
         int posicion;
         ListData rd = ((ListData)(gpdata));
-        
         children[0].eval(es, i, gpdata, adfs, gpi, prblm);
-        posicion = rd.posObjetivo;
         
-        rd.listaFinal.add(rd.listaOrginal.get(posicion));
-        rd.listaOrginal.remove(posicion);
+        
+        posicion = rd.posObjetivo;
+        if(rd.vacio == false){
+        	if(posicion < rd.listaOrginal.size()){
+        		rd.listaFinal.add(rd.listaOrginal.get(posicion));
+        		rd.listaOrginal.remove(posicion);
+        	}
+        	else{
+        		rd.listaFinal.add(rd.listaOrginal.get(rd.listaOrginal.size()-1));
+        		rd.listaOrginal.remove(rd.listaOrginal.size()-1);
+        	}
+        	if(rd.listaOrginal.isEmpty()){
+        		rd.vacio = true;
+        	}
+        	else{
+        		rd.vacio = false;
+        	}
+        }
+        else{
+        	rd.vacio = true;
+        }
     }
 }

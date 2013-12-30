@@ -19,14 +19,21 @@ public class While extends GPNode{
         
         ListData rd = ((ListData)(gpdata));
         boolean vacio;
+        int contador = 0;
+        
         children[0].eval(es, i, gpdata, adfs, gpi, prblm);
         vacio = rd.vacio;
         
-        while(vacio == false){
+        while(vacio==false && contador < rd.cantPiezas ){
         	
         	children[1].eval(es, i, gpdata, adfs, gpi, prblm);
+        	children[0].eval(es, i, gpdata, adfs, gpi, prblm);
         	vacio = rd.vacio;
+        	contador++;
         }
+        
+       
+        
     }
 	
 }

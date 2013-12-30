@@ -19,8 +19,13 @@ public class Random extends GPNode{
     public void eval(EvolutionState es, int i, GPData gpdata, ADFStack adfs, GPIndividual gpi, Problem prblm) {
         
     	ListData ld = ((ListData)gpdata);
-    	ld.posObjetivo = 0 + (int)(Math.random() * ((((StripPackingProblem)prblm).listaOrginalcurrent.size()-1 - 0) + 1));
-        
+    	if(!ld.listaOrginal.isEmpty()){
+    		ld.posObjetivo = 0 + (int)(Math.random() * ((((StripPackingProblem)prblm).data.listaOrginal.size()-1 - 0) + 1));
+    		ld.vacio = false;
+    	}
+    	else{
+    		ld.vacio = true;
+    	}
     }
 
 }
