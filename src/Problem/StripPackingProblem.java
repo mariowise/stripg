@@ -39,7 +39,7 @@ public class StripPackingProblem extends GPProblem implements SimpleProblemForm 
     	try {
 			data.listaOrginal = lectura("/home/arthen/workspace/PGspp/src/B1.txt");
 			data.listaFinal = new ArrayList<Pieza>();
-		    data.cantPiezas = data.listaOrginal.size();
+		    
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -55,12 +55,13 @@ public void evaluate(EvolutionState es, Individual indvdl, int i, int i1) {
     	ListData input = data;
     	int hits = 0;
         int sum = 0;
-        int expectedResult;
+        double expectedResult;
         int result;
        
         
         
-        expectedResult = 0;
+        expectedResult = data.optimo;
+        
         ((GPIndividual)indvdl).trees[0].child.eval(
                 es,i1,input,stack,((GPIndividual)indvdl),this);
         
@@ -100,6 +101,10 @@ public ArrayList<Pieza> lectura(String path) throws IOException{
 	while ((sCadena = bf.readLine())!=null) {
 		
 		   if(index == 0){
+			   String[] datosPrimera = sCadena.split("\t");
+			   data.cantPiezas = Integer.parseInt(datosPrimera[0]);
+			   data.anchoGlobal = ((double)Integer.parseInt(datosPrimera[1]));
+			   data.optimo = ((double)Integer.parseInt(datosPrimera[2]));
 			   index++;
 		   }
 		   else{
