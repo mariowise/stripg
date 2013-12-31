@@ -4,29 +4,31 @@ import java.util.ArrayList;
 import Data.Pieza;
 
 public class Phenotype {
+	public double widthTotal;
 	public double height;
 	public ArrayList<Pieza> stripes;
 	public ArrayList<int[]> genoma;
 	
 	Phenotype(int width) {
 		stripes.add(new Pieza(-1, width, 0));
+		widthTotal = width;
 		lowest = 0;
 	}
 	
 	public void push(Pieza newPiece) {
 		// Siendo que lowest contiene el stripe mas bajo
 		while(expand(lowest, newPiece) != 0); // Se repite siempre que sea distinto de 0
-		
 		refreshHeights();
 	}
 
-//	private double fitness() {
-//		// widthTotal debe ser el ancho del tablero (esta en la primera linea del archivo de entrada)
-//		int i, area = 0, fullArea = widthTotal * height;
-//		for(i = 0; i < stripes.size(); i++)
-//			area += stripes.get(i).getAnchoPieza() * stripes.get(i).getLargoPieza();
-//		return (float) ((float) height + ( 1.0f - (float) area / (float) fullArea ));
-//	}
+	private double fitness() {
+		// widthTotal debe ser el ancho del tablero (esta en la primera linea del archivo de entrada)
+		int i, area = 0;
+		double fullArea = widthTotal * height;
+		for(i = 0; i < stripes.size(); i++)
+			area += stripes.get(i).getAnchoPieza() * stripes.get(i).getLargoPieza();
+		return (double) ((double) height + ( 1.0f - (double) area / (double) fullArea ));
+	}
 	
 	private int lowest;
 	
