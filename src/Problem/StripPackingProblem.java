@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 import Data.ListData;
 import Data.Pieza;
+import Heuristic.Phenotype;
 import ec.EvolutionState;
 import ec.Individual;
 import ec.gp.GPIndividual;
@@ -17,6 +18,8 @@ import ec.gp.GPProblem;
 import ec.gp.koza.KozaFitness;
 import ec.simple.SimpleProblemForm;
 import ec.util.Parameter;
+import Heuristic.Phenotype;
+
 
 public class StripPackingProblem extends GPProblem implements SimpleProblemForm {
 
@@ -56,7 +59,7 @@ public void evaluate(EvolutionState es, Individual indvdl, int i, int i1) {
     	int hits = 0;
         int sum = 0;
         double expectedResult;
-        int result;
+        double result;
        
         
         
@@ -65,21 +68,21 @@ public void evaluate(EvolutionState es, Individual indvdl, int i, int i1) {
         ((GPIndividual)indvdl).trees[0].child.eval(
                 es,i1,input,stack,((GPIndividual)indvdl),this);
         
-        
-        
-        if(data.listaOrginal.isEmpty()){
-        	result = 0;
+        Phenotype fenoma = new Phenotype(data.anchoGlobal);
+        int x;
+        for(x = 0; x<data.listaFinal.size(); x++){
+        	
+        	fenoma.push(data.listaFinal.get(x));
+        	      	
         }
-        else{
-        	result = 1;
-        }
+        	
+        double fitness = fenoma.fitness();
         
-        if(result == 0) hits++;
-        sum+=result;
-        
-        
-        
-        
+        result = Math.abs(expectedResult - fitness);
+    
+        if (result <= 0.01) hits++;
+        sum += result;
+       
         KozaFitness f = ((KozaFitness)indvdl.fitness);
         f.setStandardizedFitness(es,(float)sum);
         f.hits = hits;
@@ -103,7 +106,7 @@ public ArrayList<Pieza> lectura(String path) throws IOException{
 		   if(index == 0){
 			   String[] datosPrimera = sCadena.split("\t");
 			   data.cantPiezas = Integer.parseInt(datosPrimera[0]);
-			   data.anchoGlobal = ((double)Integer.parseInt(datosPrimera[1]));
+			   data.anchoGlobal = (Integer.parseInt(datosPrimera[1]));
 			   data.optimo = ((double)Integer.parseInt(datosPrimera[2]));
 			   index++;
 		   }

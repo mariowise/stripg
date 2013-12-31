@@ -9,7 +9,7 @@ public class Phenotype {
 	public ArrayList<Pieza> stripes;
 	public ArrayList<int[]> genoma;
 	
-	Phenotype(int width) {
+	public Phenotype(int width) {
 		stripes.add(new Pieza(-1, width, 0));
 		widthTotal = width;
 		lowest = 0;
@@ -21,7 +21,7 @@ public class Phenotype {
 		refreshHeights();
 	}
 
-	private double fitness() {
+	public double fitness() {
 		// widthTotal debe ser el ancho del tablero (esta en la primera linea del archivo de entrada)
 		int i, area = 0;
 		double fullArea = widthTotal * height;

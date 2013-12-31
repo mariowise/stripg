@@ -11,7 +11,7 @@ public class ListData extends GPData{
 	public int posObjetivo;
 	public boolean vacio;
 	public int cantPiezas;
-	public double anchoGlobal;
+	public int anchoGlobal;
 	public double optimo;
 	
 	public void copyTo(final GPData gpd){ 
