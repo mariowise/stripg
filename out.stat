@@ -1,0 +1,457 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (WHILE (WHILE (PUSH MAYOR) (PUSH FIRST))
+     (RANDOM_PUSH (WHILE EMPTY MAYOR)))
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (PUSH (WHILE (WHILE RANDOM FIRST) (PUSH FIRST)))
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (PUSH FIRST)
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (WHILE (PUSH FIRST) FIRST)
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (PUSH (WHILE (WHILE (RANDOM_PUSH (WHILE FIRST
+     LAST)) (WHILE (WHILE MAYOR (PUSH (WHILE (RANDOM_PUSH
+     EMPTY) (PUSH LAST)))) (WHILE MENOR LAST)))
+     (RANDOM_PUSH (PUSH (PUSH MENOR)))))
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (RANDOM_PUSH (PUSH (RANDOM_PUSH (WHILE FIRST
+     MAYOR))))
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (PUSH (WHILE (RANDOM_PUSH MAYOR) EMPTY))
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (PUSH (PUSH MENOR))
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (RANDOM_PUSH (PUSH RANDOM))
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (WHILE (WHILE (RANDOM_PUSH FIRST) (WHILE
+     (PUSH (RANDOM_PUSH (WHILE (PUSH EMPTY) (RANDOM_PUSH
+         FIRST)))) (WHILE (WHILE (PUSH LAST) (PUSH
+     (PUSH (PUSH RANDOM)))) (WHILE MENOR EMPTY))))
+     (RANDOM_PUSH FIRST))
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (RANDOM_PUSH (WHILE (RANDOM_PUSH (PUSH RANDOM))
+     (PUSH FIRST)))
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (RANDOM_PUSH (WHILE (RANDOM_PUSH (PUSH FIRST))
+     (PUSH FIRST)))
+
+Generation: 12
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (RANDOM_PUSH (PUSH (RANDOM_PUSH (WHILE (PUSH
+     (PUSH MAYOR)) (PUSH MENOR)))))
+
+Generation: 13
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (WHILE EMPTY MAYOR)
+
+Generation: 14
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (WHILE (PUSH (WHILE (RANDOM_PUSH (RANDOM_PUSH
+     EMPTY)) (WHILE MENOR EMPTY))) RANDOM)
+
+Generation: 15
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (RANDOM_PUSH (PUSH RANDOM))
+
+Generation: 16
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (WHILE (RANDOM_PUSH (WHILE (PUSH MENOR) (RANDOM_PUSH
+     FIRST))) (WHILE MAYOR MAYOR))
+
+Generation: 17
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (RANDOM_PUSH FIRST)
+
+Generation: 18
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (RANDOM_PUSH MAYOR)
+
+Generation: 19
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (PUSH (RANDOM_PUSH (PUSH EMPTY)))
+
+Generation: 20
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (RANDOM_PUSH (RANDOM_PUSH (PUSH (PUSH (WHILE
+     (WHILE EMPTY MAYOR) (RANDOM_PUSH (RANDOM_PUSH
+     EMPTY)))))))
+
+Generation: 21
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (PUSH (WHILE MENOR (PUSH LAST)))
+
+Generation: 22
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (WHILE LAST (WHILE (RANDOM_PUSH (WHILE (WHILE
+     (RANDOM_PUSH EMPTY) (PUSH (PUSH MAYOR)))
+     EMPTY)) LAST))
+
+Generation: 23
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (PUSH RANDOM)
+
+Generation: 24
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (WHILE (RANDOM_PUSH (PUSH (PUSH (WHILE RANDOM
+     (WHILE MENOR MAYOR))))) (PUSH (WHILE MAYOR
+     (WHILE (WHILE MENOR MENOR) (PUSH (RANDOM_PUSH
+         (WHILE (RANDOM_PUSH RANDOM) LAST)))))))
+
+Generation: 25
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ EMPTY
+
+Generation: 26
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ EMPTY
+
+Generation: 27
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (WHILE (RANDOM_PUSH (WHILE FIRST LAST)) (WHILE
+     FIRST (RANDOM_PUSH (RANDOM_PUSH (PUSH LAST)))))
+
+Generation: 28
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (RANDOM_PUSH (RANDOM_PUSH (RANDOM_PUSH (RANDOM_PUSH
+     LAST))))
+
+Generation: 29
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (PUSH (WHILE (WHILE (RANDOM_PUSH (WHILE MAYOR
+     EMPTY)) LAST) (RANDOM_PUSH EMPTY)))
+
+Generation: 30
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (PUSH (PUSH (RANDOM_PUSH (PUSH MENOR))))
+
+Generation: 31
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (WHILE (RANDOM_PUSH (PUSH (RANDOM_PUSH (PUSH
+     FIRST)))) MAYOR)
+
+Generation: 32
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (PUSH (WHILE (PUSH (RANDOM_PUSH MENOR)) EMPTY))
+
+Generation: 33
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (RANDOM_PUSH (RANDOM_PUSH MAYOR))
+
+Generation: 34
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ MENOR
+
+Generation: 35
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (RANDOM_PUSH EMPTY)
+
+Generation: 36
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (WHILE (WHILE (WHILE MENOR (WHILE (WHILE
+     (WHILE (RANDOM_PUSH EMPTY) (WHILE (WHILE
+         LAST (PUSH MENOR)) (PUSH (PUSH LAST)))) (PUSH
+     RANDOM)) (WHILE FIRST EMPTY))) (WHILE EMPTY
+     EMPTY)) (WHILE (PUSH RANDOM) EMPTY))
+
+Generation: 37
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (RANDOM_PUSH (RANDOM_PUSH (PUSH (WHILE (WHILE
+     FIRST (WHILE (WHILE (RANDOM_PUSH (PUSH MAYOR))
+     (PUSH (WHILE (WHILE LAST RANDOM) (PUSH (RANDOM_PUSH
+         (WHILE (RANDOM_PUSH MAYOR) EMPTY)))))) LAST))
+     FIRST))))
+
+Generation: 38
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ LAST
+
+Generation: 39
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (PUSH (WHILE (RANDOM_PUSH (RANDOM_PUSH (RANDOM_PUSH
+     MENOR))) (PUSH (RANDOM_PUSH (RANDOM_PUSH
+     (WHILE (PUSH MAYOR) (PUSH LAST)))))))
+
+Generation: 40
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (WHILE (WHILE MAYOR MAYOR) RANDOM)
+
+Generation: 41
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (PUSH LAST)
+
+Generation: 42
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (PUSH (PUSH (RANDOM_PUSH (RANDOM_PUSH FIRST))))
+
+Generation: 43
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (RANDOM_PUSH (WHILE (WHILE EMPTY (WHILE MAYOR
+     (WHILE EMPTY (WHILE (PUSH RANDOM) (PUSH FIRST)))))
+     (WHILE (PUSH FIRST) (WHILE (PUSH LAST) (WHILE
+         LAST FIRST)))))
+
+Generation: 44
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (RANDOM_PUSH (RANDOM_PUSH LAST))
+
+Generation: 45
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (RANDOM_PUSH (WHILE (WHILE EMPTY (RANDOM_PUSH
+     (RANDOM_PUSH EMPTY))) (WHILE (PUSH FIRST)
+     (PUSH (PUSH (RANDOM_PUSH FIRST))))))
+
+Generation: 46
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (RANDOM_PUSH (RANDOM_PUSH (WHILE MAYOR (PUSH
+     LAST))))
+
+Generation: 47
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (RANDOM_PUSH FIRST)
+
+Generation: 48
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (RANDOM_PUSH (RANDOM_PUSH MENOR))
+
+Generation: 49
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (RANDOM_PUSH LAST)
+
+Generation: 50
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (PUSH MENOR)
+
+Best Individual of Run:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=20.0 Adjusted=0.04761905 Hits=0
+Tree 0:
+ (WHILE (WHILE (PUSH MAYOR) (PUSH FIRST))
+     (RANDOM_PUSH (WHILE EMPTY MAYOR)))

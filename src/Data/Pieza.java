@@ -3,13 +3,13 @@ package Data;
 public class Pieza {
 
 	private int numPieza;
-	private double largoPieza;
-	private double anchoPieza;
+	private int largoPieza;
+	private int anchoPieza;
 	
 	
 	
 	
-	public Pieza(int numPieza, double largoPieza, double anchoPieza) {
+	public Pieza(int numPieza, int largoPieza, int anchoPieza) {
 		super();
 		this.numPieza = numPieza;
 		this.largoPieza = largoPieza;
@@ -26,16 +26,16 @@ public class Pieza {
 	public void setNumPieza(int numPieza) {
 		this.numPieza = numPieza;
 	}
-	public double getLargoPieza() {
+	public int getLargoPieza() {
 		return largoPieza;
 	}
-	public void setLargoPieza(double largoPieza) {
+	public void setLargoPieza(int largoPieza) {
 		this.largoPieza = largoPieza;
 	}
-	public double getAnchoPieza() {
+	public int getAnchoPieza() {
 		return anchoPieza;
 	}
-	public void setAnchoPieza(double anchoPieza) {
+	public void setAnchoPieza(int anchoPieza) {
 		this.anchoPieza = anchoPieza;
 	}
 	
